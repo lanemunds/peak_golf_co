@@ -23,16 +23,16 @@ for putter in putter_data:
     db_putter = crud.create_putter(name, putter_path, price, company)
     putters_in_db.append(db_putter)
     print(putters_in_db)
-#     model.db.session.add_all(putters_in_db)
-# model.db.session.commit()
+model.db.session.add_all(putters_in_db)
+model.db.session.commit()
 
-# for n in range(10):
-#     email = f"user{n}@test.com"
-#     username = "test"
-#     password = "test"
+for n in range(10):
+    email = f"user{n}@test.com"
+    username = f"test{n}"
+    password = "test"
 
-#     user = crud.create_user(email, password, username)
-#     model.db.session.add(user)
+    user = crud.create_user(username, email, password)
+    model.db.session.add(user)
 
 
 model.db.session.commit()

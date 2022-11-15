@@ -1,4 +1,38 @@
-#spacer{
+body{
+    background-color: grey;
+    color: whitesmoke;
+}
+.smlpic{
+    height: 80%;
     width: 100%;
-    height: 200px;
+  
+}
+.clubblock{
+    margin: 10px;
+    border: 5px solid darkgray;
+    background-color: black;
+}
+form{
+    width: 100%;
+    border: 5px solid black;
+    
+}
+.putters{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.create-acc{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+   
+}
+.words{
+    color: black;
+
+}
+img{
+    height: 400px;
+    width: 400px;
 }

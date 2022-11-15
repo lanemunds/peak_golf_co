@@ -1,4 +1,15 @@
-{% extends 'base.html' %} {% block body%} {% endblock %}
-<div id="spacer"></div>
+{% extends 'base.html' %} {% block body%}
 
 <h1>Inventory</h1>
+
+<section class="putters">
+    {%for putter in clubs%}
+  <div class="col-2 clubblock">
+    <h5>{{putter.name}}</h5>
+    <a href="/putters/{{putter.putter_id}}">
+    <img class = "smlpic" src={{putter.putter_path}} alt="">
+  </a>
+    </div>
+    {%endfor%} {% endblock %}
+    </a>
+  </section>

@@ -16,7 +16,8 @@ def homepage():
 
 @app.route('/putters')
 def putter_page():
-    return render_template("putters.html")
+    clubs = crud.get_putters()
+    return render_template("putters.html", clubs=clubs)
 
 
 @app.route('/login')
@@ -29,9 +30,10 @@ def create_account_page():
     return render_template("create_account.html")
 
 
-@app.route('/putter<putter_id>')
-def specs_page():
-    return render_template("putter_specs.html")
+@app.route('/putters/<putter_id>')
+def specs_page(putter_id):
+    putter = crud.get_putter_by_id(putter_id)
+    return render_template("putter_specs.html", putter=putter)
 
 
 @app.route('/cart')
@@ -41,6 +43,7 @@ def cart_page():
 
 @app.route("/users", methods=["POST"])
 def register_user():
+    username = request.form.get("username")
     email = request.form.get("email")
     password = request.form.get("password")
 
@@ -50,11 +53,11 @@ def register_user():
             "Account with that email already exists. Please log in or try a different email")
         return redirect('/create_account')
     else:
-        user = crud.create_user(email, password)
+        user = crud.create_user(username, email, password)
         db.session.add(user)
         db.session.commit()
         flash("Account created! Please log in.")
-    return redirect('/loginpage')
+    return redirect('/login')
 
 
 @app.route("/login", methods=['POST'])
@@ -67,7 +70,14 @@ def login():
         flash("The email or password you entered was incorrect")
     else:
         session['user_email'] = user.email
-        flash(f"Welcome Back,{user.email}!")
+        flash(f"Welcome Back,{user.username}!")
+    return redirect("/")
+
+
+@app.route("/logout")
+def logout():
+    del session['user_email']
+    flash("You're logged out")
     return redirect("/")
 
 
