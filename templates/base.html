@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peak Golf Co</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/index.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark navbar-expand">
+        <div class="container-fluid">
+            <a class="navbar-brand nav-title" href="/">Peak Golf Co</a>
+            <div class="collapse navbar-collapse">
+                <div class="navbar-nav">
+                    <a class="nav-link nav-size" href="/putters">View Our Putters</a>
+                    <a class="nav-link nav-size" href="/cart">My Shopping Cart</a>
+                    {% if 'username' in session %}
+                    <a class="nav-link nav-size" href="/logout">Log Out</a>
+                    {% else %}
+                    <a class="nav-link nav-size" href="/login">Log In</a>
+                    <a class="nav-link nav-size" href="/create_account">Create Account</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% block body %}
+        BODY OF PAGE GOES HERE VIA INHERITANCE
+    {% endblock %}
+  </body>
+</html>

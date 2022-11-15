@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Spider Tour Black",
+        "price": 199.99,
+        "putter_path": "http://drivingrangeheroes.com/wp-content/uploads/2017/10/Taylormade-Spider-Tour-Putter-1.jpg",
+        "company": "TaylorMade"
+    },
+    {
+        "name": "Select Fastback 2",
+        "price": 399.99,
+        "putter_path":"https://www.scottycameron.com/media/15122/2018select_fastback2_2a.jpg",
+        "company": "Scotty Cameron"
+    },
+    {
+        "name": "2023 Putter",
+        "price": 279.00,
+        "putter_path":"https://mygolfspy-wp-uploads.s3.amazonaws.com/uploads/2022/09/PING-2023-Anser-2D-1.jpeg",
+        "company": "Ping"
+    }
+]
