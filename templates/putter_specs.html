@@ -1,13 +1,15 @@
 {% extends 'base.html' %} {% block body%}
 <h1>putter specs</h1>
 <h1>{{ putter.name }}</h1>
-
 {% if session.get('user_email') %}
-<h2>Have you seen this movie?</h2>
-<div class="mb-3 form-check form-switch">
-  <input class="form-check-input" type="checkbox" />
-  <label for="">Yes</label>
-</div>
+<h2>Have you used this putter?</h2>
+<form action="/putters/{{ putter.putter_id }}/used" method="POST">
+  <div class="mb-3 form-check form-switch">
+    <input name="used" class="form-check-input" type="checkbox" />
+    <label for="True">Yes</label>
+    <p><input type="submit" /></p>
+  </div>
+</form>
 <h2>Rate this Putter</h2>
 <form action="/putters/{{ putter.putter_id }}/ratings" method="POST">
   <p>
@@ -22,6 +24,12 @@
   <p><input type="submit" /></p>
 </form>
 {% endif %}
+
+<a
+  class="btn btn-primary"
+  href="{{ url_for('add_to_cart', putter_id=putter.putter_id) }}"
+  >Add to Cart</a
+>
 
 <img src="{{ putter.putter_path }}" />
 {% endblock %}

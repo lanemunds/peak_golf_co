@@ -1,2 +1,29 @@
-{% extends 'base.html' %} {% block body%} {% endblock %}
-<h1>cart</h1>
+{% extends 'base.html' %} {% block body%}
+<div class="spacer"></div>
+<h1>My Shopping Cart</h1>
+
+<table class="table table-striped mt-3">
+  <thead>
+    <tr>
+      <th>Putter Name</th>
+      <th>Quantity</th>
+      <th>Price</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for putter in cart_putters %}
+    <tr>
+      <td>{{ putter.name }}</td>
+      <td>{{ putter.quantity }}</td>
+      <td>${{ "%0.2f" | format(putter.price) }}</td>
+      <td>${{ "%0.2f" | format(putter.total_cost) }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<h3>Total: ${{ "%0.2f" | format(order_total) }}</h3>
+<a href="/empty-cart" class="btn btn-primary">Empty Cart</a>
+
+{%endblock%}

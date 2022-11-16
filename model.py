@@ -53,6 +53,36 @@ class Putter(db.Model):
         return f'<Putter putter_id = {self.putter_id} name = {self.name}'
 
 
+class Rating(db.Model):
+    __tablename__ = 'ratings'
+
+    rating_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+    score = db.Column(db.Integer)
+    putter_id = db.Column(db.Integer, db.ForeignKey("clubs.putter_id"))
+    user_id = db.Column(db.Integer, db.ForeignKey("users.user_id"))
+
+    putter = db.relationship("Putter", backref="ratings")
+    user = db.relationship("User", backref="ratings")
+
+    def __repr__(self):
+        return f'<Rating rating_id={self.rating_id} score={self.score}>'
+
+
+class Used(db.Model):
+    __tablename__ = 'used'
+
+    used_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+    haveUsed = db.Column(db.Boolean)
+    putter_id = db.Column(db.Integer, db.ForeignKey("clubs.putter_id"))
+    user_id = db.Column(db.Integer, db.ForeignKey("users.user_id"))
+
+    putter = db.relationship("Putter", backref="have-used")
+    user = db.relationship("User", backref="have-used")
+
+    def __repr__(self):
+        return f'<Used used_id={self.used_id} haveUsed={self.haveUsed}>'
+
+
 if __name__ == "__main__":
     from server import app
 

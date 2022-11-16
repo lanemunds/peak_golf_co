@@ -1,0 +1,13 @@
+{% extends 'base.html' %} {% block body %}
+<h1>{{ user.email }}</h1>
+
+<h2>Ratings</h2>
+<ul>
+  {% for rating in user.ratings %}
+  <li>
+    {{ rating.putter.name }}:
+    <span class="rating_num_" {{rating.rating_id}}> {{ rating.score }} </span>
+  </li>
+  {% endfor %}
+</ul>
+{%endblock%}
