@@ -1,6 +1,6 @@
 from flask import Flask, render_template, redirect, flash, request, session, url_for
 from jinja2 import StrictUndefined
-
+from random import randint
 import crud
 from model import connect_to_db, db
 
@@ -11,34 +11,44 @@ app.jinja_env.undefined = StrictUndefined
 
 @app.route('/')
 def homepage():
-    return render_template("index.html")
+    putter = crud.get_putter_by_id(randint(1, 6))
+    return render_template("index.html", putter=putter)
 
 
-@app.route('/putters')
+@ app.route('/putters')
 def putter_page():
     clubs = crud.get_putters()
     return render_template("putters.html", clubs=clubs)
 
 
-@app.route('/login')
+@ app.route('/login')
 def login_page():
     return render_template("login.html")
 
 
-@app.route('/create_account')
+@ app.route('/create_account')
 def create_account_page():
     return render_template("create_account.html")
 
 
-@app.route('/putters/<putter_id>')
+@ app.route('/putters/<putter_id>')
 def specs_page(putter_id):
     putter = crud.get_putter_by_id(putter_id)
     used = crud.get_used()
     people = crud.get_users()
-    return render_template("putter_specs.html", putter=putter, used=used, people=people)
+    ratings = crud.get_rating_by_putter_id(putter_id)
+    total = 0
+    for rating in ratings:
+        total = total + rating.score
+    if len(ratings) != 0:
+        avg = total/len(ratings)
+    else:
+        avg = -1
+
+    return render_template("putter_specs.html", putter=putter, used=used, people=people, avg=avg)
 
 
-@app.route("/users", methods=["POST"])
+@ app.route("/users", methods=["POST"])
 def register_user():
     username = request.form.get("username")
     email = request.form.get("email")
@@ -57,7 +67,7 @@ def register_user():
     return redirect('/login')
 
 
-@app.route("/login", methods=['POST'])
+@ app.route("/login", methods=['POST'])
 def login():
     email = request.form.get('email')
     password = request.form.get('password')
@@ -71,7 +81,7 @@ def login():
     return redirect("/")
 
 
-@app.route("/logout")
+@ app.route("/logout")
 def logout():
     del session['user_email']
     session["cart"] = {}
@@ -79,7 +89,7 @@ def logout():
     return redirect("/")
 
 
-@app.route('/cart')
+@ app.route('/cart')
 def cartPage():
     if 'user_email' not in session:
         return redirect('/login')
@@ -100,7 +110,7 @@ def cartPage():
     return render_template("cart.html", cart_putters=cart_putters, order_total=order_total)
 
 
-@app.route('/add_to_cart/<putter_id>')
+@ app.route('/add_to_cart/<putter_id>')
 def add_to_cart(putter_id):
     if 'user_email' not in session:
         return redirect('/login')
@@ -115,14 +125,14 @@ def add_to_cart(putter_id):
     return redirect("/cart")
 
 
-@app.route("/empty-cart")
+@ app.route("/empty-cart")
 def empty_cart():
     session["cart"] = {}
 
     return redirect("/cart")
 
 
-@app.route("/putters/<putter_id>/ratings", methods=["POST"])
+@ app.route("/putters/<putter_id>/ratings", methods=["POST"])
 def create_rating(putter_id):
 
     logged_in_email = session.get("user_email")
@@ -145,7 +155,7 @@ def create_rating(putter_id):
     return redirect(f"/putters/{putter_id}")
 
 
-@app.route("/putters/<putter_id>/used", methods=["POST"])
+@ app.route("/putters/<putter_id>/used", methods=["POST"])
 def haveYouUsed(putter_id):
 
     logged_in_email = session.get("user_email")
@@ -166,7 +176,7 @@ def haveYouUsed(putter_id):
     return redirect(f"/putters/{putter_id}")
 
 
-@app.route("/users")
+@ app.route("/users")
 def all_users():
 
     users = crud.get_users()
@@ -174,7 +184,7 @@ def all_users():
     return render_template("users.html", users=users)
 
 
-@app.route("/users/<user_id>")
+@ app.route("/users/<user_id>")
 def show_user(user_id):
 
     user = crud.get_user_by_id(user_id)

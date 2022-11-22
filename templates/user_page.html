@@ -1,6 +1,7 @@
 {% extends 'base.html' %} {% block body %}
 <h1>Welcome to {{ user.username }}'s page</h1>
 
+{%if user.ratings%}
 <h2>{{user.username}}'s Ratings</h2>
 <ul>
   {% for rating in user.ratings %}
@@ -10,10 +11,15 @@
   </li>
   {% endfor %}
 </ul>
+{%else%}
+<h4 class="text-muted">This user has not submitted any ratings</h4>
+{%endif%} {%if user.have_used%}
 <h2>Putters {{user.username}} has used</h2>
 <ul>
   {% for haveUsed in user.have_used %}
   <li>{{ haveUsed.putter.name }}</li>
   {% endfor %}
 </ul>
-{%endblock%}
+{%else%}
+<h4 class="text-muted">This user has not submitted any putters as used</h4>
+{%endif%} {%endblock%}

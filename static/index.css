@@ -81,3 +81,6 @@ header{
     flex-direction: row;
     flex-wrap: wrap;
 }
+#featured{
+    margin: 4rem;
+}

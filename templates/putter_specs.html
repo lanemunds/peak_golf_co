@@ -12,7 +12,12 @@
   </div>
   {{putter.info}}
 </section>
-{% if session.get('user_email') %}
+{%if avg >= 0%}
+<h2>Average Rating:</h2>
+<h2>{{avg}}</h2>
+{%else%}
+<h2>No Ratings Yet</h2>
+{%endif%} {% if session.get('user_email') %}
 <section class="putter_form">
   <h2>Have you used this putter?</h2>
   <form action="/putters/{{ putter.putter_id }}/used" method="POST">

@@ -31,6 +31,10 @@ def get_putter_by_id(putter_id):
     return Putter.query.get(putter_id)
 
 
+def get_rating_by_putter_id(putter_id):
+    return Rating.query.filter_by(putter_id=putter_id).all()
+
+
 def get_user_by_id(user_id):
     return User.query.get(user_id)
 
@@ -43,11 +47,6 @@ def create_rating(user, putter, score):
 
     rating = Rating(user=user, putter=putter, score=score)
     return rating
-
-
-def update_rating(rating_id, new_score):
-    rating = Rating.query.get(rating_id)
-    rating.score = new_score
 
 
 def create_used(user, putter, haveUsed):
