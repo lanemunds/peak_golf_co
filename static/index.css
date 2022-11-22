@@ -1,16 +1,17 @@
 body{
-    background-color: grey;
-    color: whitesmoke;
+    background-color: #433f3f;
+    color: white;
 }
 .smlpic{
-    height: 80%;
+    height: 70%;
     width: 100%;
-  
+    background-color: rgb(92, 89, 89);
 }
 .clubblock{
     margin: 10px;
-    border: 5px solid darkgray;
-    background-color: black;
+    border: .5rem solid rgb(0, 0, 0);
+    background-color: rgb(61, 55, 55);
+   
 }
 form{
     width: 100%;
@@ -22,6 +23,7 @@ form{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    color: white;
 }
 .create-acc{
     display: flex;
@@ -60,4 +62,22 @@ header{
 .putt_spec_img{
     margin-left: 2rem;
     border: 3px solid black;
+}
+.users{
+    margin: 1rem;
+    height: 4rem;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(92, 89, 89);
+    color: aliceblue;
+    border: .5rem solid black;
+
+}
+.user_sec{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
 }

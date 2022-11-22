@@ -1,12 +1,11 @@
 {% extends 'base.html' %} {% block title %}All Users{% endblock %} {% block body
 %}
 <h1>All Users</h1>
-
-<ul>
+<section class="user_sec">
   {% for user in users %}
-  <li>
-    <a href="/users/{{ user.user_id }}"> {{ user.email }} </a>
-  </li>
+
+  <a class="users" href="/users/{{ user.user_id }}"> {{ user.email }} </a>
+
   {% endfor %}
-</ul>
+</section>
 {% endblock %}
