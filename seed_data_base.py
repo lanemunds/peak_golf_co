@@ -18,9 +18,9 @@ with open('data/putters.json') as f:
 
 putters_in_db = []
 for putter in putter_data:
-    name, putter_path, price, company = (
-        putter["name"], putter["putter_path"], putter["price"], putter["company"])
-    db_putter = crud.create_putter(name, putter_path, price, company)
+    name, putter_path, price, company, info = (
+        putter["name"], putter["putter_path"], putter["price"], putter["company"], putter["info"])
+    db_putter = crud.create_putter(name, putter_path, price, company, info)
     putters_in_db.append(db_putter)
     print(putters_in_db)
 model.db.session.add_all(putters_in_db)

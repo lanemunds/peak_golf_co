@@ -74,6 +74,7 @@ def login():
 @app.route("/logout")
 def logout():
     del session['user_email']
+    session["cart"] = {}
     flash("You're logged out")
     return redirect("/")
 
@@ -171,6 +172,7 @@ def all_users():
     users = crud.get_users()
 
     return render_template("users.html", users=users)
+
 
 @app.route("/users/<user_id>")
 def show_user(user_id):

@@ -42,12 +42,14 @@ class Putter(db.Model):
     putter_path = db.Column(db.String)
     price = db.Column(db.Integer)
     company = db.Column(db.String)
+    info = db.Column(db.String)
 
-    def __init__(self, name, putter_path, price, company):
+    def __init__(self, name, putter_path, price, company, info):
         self.name = name
         self.putter_path = putter_path
         self.price = price
         self.company = company
+        self.info = info
 
     def __repr__(self):
         return f'<Putter putter_id = {self.putter_id} name = {self.name}'
@@ -76,8 +78,8 @@ class Used(db.Model):
     putter_id = db.Column(db.Integer, db.ForeignKey("clubs.putter_id"))
     user_id = db.Column(db.Integer, db.ForeignKey("users.user_id"))
 
-    putter = db.relationship("Putter", backref="have-used")
-    user = db.relationship("User", backref="have-used")
+    putter = db.relationship("Putter", backref="have_used")
+    user = db.relationship("User", backref="have_used")
 
     def __repr__(self):
         return f'<Used used_id={self.used_id} haveUsed={self.haveUsed}>'

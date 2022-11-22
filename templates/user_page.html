@@ -1,13 +1,19 @@
 {% extends 'base.html' %} {% block body %}
-<h1>{{ user.email }}</h1>
+<h1>{{ user.username }}'s page</h1>
 
-<h2>Ratings</h2>
+<h2>{{user.username}}'s Ratings</h2>
 <ul>
   {% for rating in user.ratings %}
   <li>
     {{ rating.putter.name }}:
     <span class="rating_num_" {{rating.rating_id}}> {{ rating.score }} </span>
   </li>
+  {% endfor %}
+</ul>
+<h2>Putters {{user.username}} has used</h2>
+<ul>
+  {% for haveUsed in user.have_used %}
+  <li>{{ haveUsed.putter.name }}</li>
   {% endfor %}
 </ul>
 {%endblock%}

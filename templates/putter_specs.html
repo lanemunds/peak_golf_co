@@ -1,35 +1,41 @@
 {% extends 'base.html' %} {% block body%}
-<h1>putter specs</h1>
-<h1>{{ putter.name }}</h1>
-{% if session.get('user_email') %}
-<h2>Have you used this putter?</h2>
-<form action="/putters/{{ putter.putter_id }}/used" method="POST">
-  <div class="mb-3 form-check form-switch">
-    <input name="used" class="form-check-input" type="checkbox" />
-    <label for="True">Yes</label>
-    <p><input type="submit" /></p>
+<header class="container-fluid"><h1>{{ putter.name }}</h1></header>
+<section class="putter_info">
+  <img class="putt_spec_img" src="{{ putter.putter_path }}" />
+  <div class="price_cart">
+    <h2>${{putter.price}}.00</h2>
+    <a
+      class="btn btn-primary"
+      href="{{ url_for('add_to_cart', putter_id=putter.putter_id) }}"
+      >Add to Cart</a
+    >
   </div>
-</form>
-<h2>Rate this Putter</h2>
-<form action="/putters/{{ putter.putter_id }}/ratings" method="POST">
-  <p>
-    Rating:
-    <select name="rating">
-      <option value="">Select rating</option>
-      {% for num in range(6) %}
-      <option value="{{ num }}">{{ num }}</option>
-      {% endfor %}
-    </select>
-  </p>
-  <p><input type="submit" /></p>
-</form>
-{% endif %}
-
-<a
-  class="btn btn-primary"
-  href="{{ url_for('add_to_cart', putter_id=putter.putter_id) }}"
-  >Add to Cart</a
->
-
-<img src="{{ putter.putter_path }}" />
-{% endblock %}
+  {{putter.info}}
+</section>
+{% if session.get('user_email') %}
+<section class="putter_form">
+  <h2>Have you used this putter?</h2>
+  <form action="/putters/{{ putter.putter_id }}/used" method="POST">
+    <div class="mb-3 form-check form-switch">
+      <input name="used" class="form-check-input" type="checkbox" />
+      <label for="True">Yes</label>
+      <p><input type="submit" /></p>
+    </div>
+  </form>
+</section>
+<section class="putter_form">
+  <h2>How would you rate this putter</h2>
+  <form action="/putters/{{ putter.putter_id }}/ratings" method="POST">
+    <p>
+      Rating:
+      <select name="rating">
+        <option value="">Select rating</option>
+        {% for num in range(6) %}
+        <option value="{{ num }}">{{ num }}</option>
+        {% endfor %}
+      </select>
+    </p>
+    <p><input type="submit" /></p>
+  </form>
+</section>
+{% endif %} {% endblock %}

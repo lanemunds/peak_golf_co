@@ -14,7 +14,8 @@ body{
 }
 form{
     width: 100%;
-    border: 5px solid black;
+    margin: 2rem;
+    /* border: 3px solid black; */
     
 }
 .putters{
@@ -35,4 +36,28 @@ form{
 img{
     height: 400px;
     width: 400px;
+}
+header{
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+.putter_form{
+    display: flex;
+    justify-content: center;
+    margin: 5rem;
+    width: 40%;
+}
+
+.putter_info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price_cart{
+    margin: 5rem;
+}
+.putt_spec_img{
+    margin-left: 2rem;
+    border: 3px solid black;
 }

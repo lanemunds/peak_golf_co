@@ -8,10 +8,10 @@ def create_user(username, email, password):
     return user
 
 
-def create_putter(name, putter_path, price, company):
+def create_putter(name, putter_path, price, company, info):
 
     putter = Putter(name=name, putter_path=putter_path,
-                    price=price, company=company)
+                    price=price, company=company, info=info)
     return putter
 
 

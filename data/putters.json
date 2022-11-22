@@ -3,18 +3,58 @@
         "name": "Spider Tour Black",
         "price": 199.99,
         "putter_path": "http://drivingrangeheroes.com/wp-content/uploads/2017/10/Taylormade-Spider-Tour-Putter-1.jpg",
-        "company": "TaylorMade"
+        "company": "TaylorMade",
+        "info":"The Spider Tour Black with Sightline delivers Tour-proven performance to every golfer. With perimeter weighting for added stability and an added sightline to zero in the player's focus, Spider Tour Black with Sightline provides a stroke of confidence to help golfers drain more putts when they matter most."
     },
     {
         "name": "Select Fastback 2",
         "price": 399.99,
         "putter_path":"https://www.scottycameron.com/media/15122/2018select_fastback2_2a.jpg",
-        "company": "Scotty Cameron"
+        "company": "Scotty Cameron",
+        "info": "Timeless designs combine with modern craftsmanship to deliver the new line of Scotty Cameron Special Select Putters. The line features tour-inspired blade and mid-mallet designs that equip golfers with pure performance and a solid milled feel. Scotty concentrated improvements to the Special Select’s head profile design, topline and neck configurations. The new Performance Balanced Weighting System contains interchangeable sole weights to deliver a total customizable player experience."
     },
     {
         "name": "2023 Putter",
         "price": 279.00,
         "putter_path":"https://mygolfspy-wp-uploads.s3.amazonaws.com/uploads/2022/09/PING-2023-Anser-2D-1.jpeg",
-        "company": "Ping"
+        "company": "Ping",
+        "info":"A PEBAX insert with shallow milled surround ensures a softer feel and consistent ball speed with pleasing acoustics. Tungsten toe-heel weights provide stability and forgiveness, a single white alignment line contrasts with the all-black head, and a ball-width cavity floor help frame the ball to make aligning to the target easier."
+    },
+    {
+        "name": "Spider GT Red #3",
+        "price": 250.00,
+        "putter_path":"https://www.pgatoursuperstore.com/dw/image/v2/BCFG_PRD/on/demandware.static/-/Sites-master-catalog-pgatss/default/dw4434623a/Golf-Clubs/Wedges-Putters/Mens-Putters/TaylorMade/2000000025357/TM22PTR_TA406_Spider_GT_Red_No3_SOL_v2.png?sw=767&sh=767&sm=fit",
+        "company": "TaylorMade",
+        "info":"Spider GT sets a new standard in terms of performance and contemporary construction. The modern wing design has sharp angular features and extreme perimeter weighting for optimal forgiveness. Made from lightweight 6061 Aluminum, the 145g top plate eliminates excess weight in the middle of the putter. Steel side weights (80g per weight for a total of 160g) create a heavy frame for stability and distance control. Only 18% of the weight is centered in the middle to stabilize deflection on off-center strikes for maximum forgiveness."
+    },
+    {
+        "name": "Mezz.1",
+        "price": 449.00,
+        "putter_path":"https://www.pgatoursuperstore.com/dw/image/v2/BCFG_PRD/on/demandware.static/-/Sites-master-catalog-pgatss/default/dw4d6d5a15/Golf-Clubs/Wedges-Putters/Mens-Putters/LAB-Golf/2000000026665/LABGolf_Mezz_001.jpg?sw=767&sh=767&sm=fit",
+        "company": "Lab Golf",
+        "info":"With MEZZ.1, you’ll feel the contact more than you will with DF 2.1. This is great for golfers that want a little more feedback about how their putter is moving and can help with controlling pace on ultra-slick putts. Their original Lie Angle Balanced putter, DF 2.1, is quite large and has a high-MOI. That combination makes it feel like it’s gliding on rails. Some golfers want this fully-automatic experience, while others prefer to have a little more control and that’s what MEZZ.1 delivers. P.S. For maximum feedback, check out B.2. It’s not as forgiving as MEZZ.1 or DF 2.1 on off-center hits, but if you’re going to play a blade like B.2 you probably don’t miss the sweet spot much."
+    },
+    {
+        "name": "Sigma 2 Fetch",
+        "price": 169.00,
+        "putter_path":"https://www.pgatoursuperstore.com/dw/image/v2/BCFG_PRD/on/demandware.static/-/Sites-master-catalog-pgatss/default/dw216b2ce1/Golf-Clubs/Wedges-Putters/Mens-Putters/Ping/2000000001376/2000000001376_1.png?sw=767&sh=767&sm=fit",
+        "company": "Ping",
+        "info":"The revolutionary design of the Ping Sigma 2 fetch putter enables you to pick up the ball or remove it from the cup with the putter head without having to bend down. The circular shape of the Ping Sigma 2 fetch putter allows for efficient perimeter weighting, which creates an extremely high MOI for a putter of its size. The 365-gram head of the PING Sigma 2 fetch putter is what makes this putter extremely stable on shorter putts. The face-balanced design of this putter also works well with players who have little rotation in their stroke or a tendency to push putts. If you find yourself frequently pushing your putts, try the PING Sigma 2 fetch putter today!"
+    },
+    {
+        "name": "M Craft OMOI",
+        "price": 349.00,
+        "putter_path":"https://www.pgatoursuperstore.com/dw/image/v2/BCFG_PRD/on/demandware.static/-/Sites-master-catalog-pgatss/default/dw5f4abe4f/Golf-Clubs/Wedges-Putters/Mens-Putters/Mizuno/2000000024921/OMOI_Blue_02_1.jpg?sw=1200&sh=1200&sm=fit",
+        "company": "Mizuno",
+        "info":"The new M.CRAFT OMOI introduces heavyweight stability to Mizuno’s forged putter line-up – renowned for its precise looks and feel. Forged from premium 1025 carbon steel and CNC milled, using all the successful fundamentals of the original M-Craft models, the OMOI putters feature a heavier head weight to increase MOI for improved stability. The OMOI achieved its new stability by taking a view of the entire club – balancing out the increased headweight with a lighter weight grip and shaft to shift the club’s CG and help control face rotation through the putting stroke. Every putter also comes with an additional weight kit – including a pair of 3g and 13g weights interchangeable with the 8g fitted as standard."
+
+    },
+    {
+        "name": "Buckingham Infinite",
+        "price": 129.00,
+        "putter_path":"https://www.pgatoursuperstore.com/dw/image/v2/BCFG_PRD/on/demandware.static/-/Sites-master-catalog-pgatss/default/dw374280ad/Golf-Clubs/Wedges-Putters/Mens-Putters/Wilson/2000000018014/Buckingham_Infinite_Putter_Hero.png?sw=767&sh=767&sm=fit",
+        "company": "Wilson",
+        "info":"The Wilson Infinite Putter line includes nine head shapes in a dark matte finish to reduce glare and accentuate sight lines. Counterbalanced technology provides a more controlled putting stroke. Inspired by the company's headquarters in Chicago, each putter is named after a local landmark or neighborhood. The new line features a dark, matte finish to reduce glare and accentuate sight-lines."
     }
+    
 ]
