@@ -26,7 +26,7 @@ for putter in putter_data:
 model.db.session.add_all(putters_in_db)
 model.db.session.commit()
 
-for n in range(10):
+for n in range(4):
     email = f"user{n}@test.com"
     username = f"test{n}"
     password = "test"

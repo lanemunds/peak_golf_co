@@ -123,3 +123,7 @@ header{
     right: 5rem;
     top: 10rem;
 }
+.tiny_img{
+    height: 10rem;
+    width: 10rem;
+}

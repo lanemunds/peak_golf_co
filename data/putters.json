@@ -1,14 +1,14 @@
 [
     {
         "name": "Spider Tour Black",
-        "price": 199.99,
+        "price": 199.00,
         "putter_path": "http://drivingrangeheroes.com/wp-content/uploads/2017/10/Taylormade-Spider-Tour-Putter-1.jpg",
         "company": "TaylorMade",
         "info":"The Spider Tour Black with Sightline delivers Tour-proven performance to every golfer. With perimeter weighting for added stability and an added sightline to zero in the player's focus, Spider Tour Black with Sightline provides a stroke of confidence to help golfers drain more putts when they matter most."
     },
     {
         "name": "Select Fastback 2",
-        "price": 399.99,
+        "price": 399.00,
         "putter_path":"https://www.scottycameron.com/media/15122/2018select_fastback2_2a.jpg",
         "company": "Scotty Cameron",
         "info": "Timeless designs combine with modern craftsmanship to deliver the new line of Scotty Cameron Special Select Putters. The line features tour-inspired blade and mid-mallet designs that equip golfers with pure performance and a solid milled feel. Scotty concentrated improvements to the Special Select’s head profile design, topline and neck configurations. The new Performance Balanced Weighting System contains interchangeable sole weights to deliver a total customizable player experience."
@@ -55,6 +55,14 @@
         "putter_path":"https://www.pgatoursuperstore.com/dw/image/v2/BCFG_PRD/on/demandware.static/-/Sites-master-catalog-pgatss/default/dw374280ad/Golf-Clubs/Wedges-Putters/Mens-Putters/Wilson/2000000018014/Buckingham_Infinite_Putter_Hero.png?sw=767&sh=767&sm=fit",
         "company": "Wilson",
         "info":"The Wilson Infinite Putter line includes nine head shapes in a dark matte finish to reduce glare and accentuate sight lines. Counterbalanced technology provides a more controlled putting stroke. Inspired by the company's headquarters in Chicago, each putter is named after a local landmark or neighborhood. The new line features a dark, matte finish to reduce glare and accentuate sight-lines."
+    },
+    
+    {
+        "name": "2-Ball Ten Putter",
+        "price": 299.00,
+        "putter_path":"https://dks.scene7.com/is/image/GolfGalaxy/21CWYM2BLL10SXXXXPTR?qlt=70&wid=1100&fmt=webp",
+        "company": "Odyssey",
+        "info":"Double bend face-balanced mallet putter, Ideal for golfers with strokes with moderate face rotation and arc, Super high MOI head design, Microhinge Star Insert promotes immediate forward roll for improved speed and control, Multi-material Stroke Lab shaft is lighter, stiffer and more stable to improve tempo and consistency,  Grip: Odyssey Ten Oversize Grip"
     }
     
 ]
