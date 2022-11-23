@@ -14,7 +14,7 @@
 </section>
 {%if avg >= 0%}
 <h2>Average Rating:</h2>
-<h2>{{avg}}</h2>
+<h2>{{"%0.1f" | format(avg)}}</h2>
 {%else%}
 <h2>No Ratings Yet</h2>
 {%endif%} {% if session.get('user_email') %}

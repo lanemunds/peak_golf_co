@@ -84,3 +84,8 @@ header{
 #featured{
     margin: 4rem;
 }
+.trending{
+    margin: auto;
+    width: 50%;
+    padding-left: 300px;
+}
