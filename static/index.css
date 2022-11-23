@@ -83,9 +83,43 @@ header{
 }
 #featured{
     margin: 4rem;
+    width: 60%;
+    position: relative;
+    bottom: 10rem;
 }
 .trending{
     margin: auto;
     width: 50%;
     padding-left: 300px;
+}
+.welcome{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#welcome_message{
+    width: 40%;
+    position: relative;
+    left: 50rem;
+    padding-top: 5rem;
+}
+#trend_box{
+    position: relative;
+    bottom: 15rem;
+}
+.user_page{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+#user_ratings{
+    width: 40%;
+    padding-left: 5rem;
+}
+#user_bag{
+    width: 40%;
+    position:absolute;
+    right: 5rem;
+    top: 10rem;
 }

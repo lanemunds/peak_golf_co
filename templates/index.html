@@ -1,5 +1,10 @@
 {% extends 'base.html' %} {% block body%}
-<h1>Welcome to Peak Golf Company!</h1>
+<h1 class="welcome">Welcome to Peak Golf</h1>
+<h3 id="welcome_message">
+  Your premier shop for all your putting needs. We offer a wide selection of
+  putters from all of golfs biggest name brands. whatever your putting needs,
+  Peak Golf has you covered.
+</h3>
 
 <div id="featured">
   <h2>Todays Featured Putter</h2>
@@ -8,55 +13,57 @@
     <img class="putt_spec_img" src="{{putter.putter_path}}" alt="" />
   </a>
 </div>
-<h1>Trending Putters</h1>
-<div id="testimonial-carousel" class="carousel slide" data-bs-ride="100">
-  <div class="carousel-inner trending">
-    <div class="carousel-item active container-fluid">
-      <h2>Buckingham Infinite</h2>
-      <img
-        src="https://www.pgatoursuperstore.com/dw/image/v2/BCFG_PRD/on/demandware.static/-/Sites-master-catalog-pgatss/default/dw374280ad/Golf-Clubs/Wedges-Putters/Mens-Putters/Wilson/2000000018014/Buckingham_Infinite_Putter_Hero.png?sw=767&sh=767&sm=fit"
-      />
-      <em>$129.00</em>
+<div id="trend_box">
+  <h1 class="welcome">Trending Putters</h1>
+  <div id="testimonial-carousel" class="carousel slide" data-bs-ride="100">
+    <div class="carousel-inner trending">
+      <div class="carousel-item active container-fluid">
+        <h2>Buckingham Infinite</h2>
+        <img
+          src="https://www.pgatoursuperstore.com/dw/image/v2/BCFG_PRD/on/demandware.static/-/Sites-master-catalog-pgatss/default/dw374280ad/Golf-Clubs/Wedges-Putters/Mens-Putters/Wilson/2000000018014/Buckingham_Infinite_Putter_Hero.png?sw=767&sh=767&sm=fit"
+        />
+        <em>$129.00</em>
+      </div>
+      <div class="carousel-item container-fluid">
+        <h2>M Craft OMOI</h2>
+        <img
+          src="https://www.pgatoursuperstore.com/dw/image/v2/BCFG_PRD/on/demandware.static/-/Sites-master-catalog-pgatss/default/dw5f4abe4f/Golf-Clubs/Wedges-Putters/Mens-Putters/Mizuno/2000000024921/OMOI_Blue_02_1.jpg?sw=1200&sh=1200&sm=fit"
+        />
+        <em>$349.00</em>
+      </div>
+      <div class="carousel-item container-fluid">
+        <h2>Sigma Fetch 2</h2>
+        <img
+          src="https://www.pgatoursuperstore.com/dw/image/v2/BCFG_PRD/on/demandware.static/-/Sites-master-catalog-pgatss/default/dw216b2ce1/Golf-Clubs/Wedges-Putters/Mens-Putters/Ping/2000000001376/2000000001376_1.png?sw=767&sh=767&sm=fit"
+        />
+        <em>$169.00</em>
+      </div>
+      <div class="carousel-item container-fluid">
+        <h2>Spider GT Red #3</h2>
+        <img
+          src="https://www.pgatoursuperstore.com/dw/image/v2/BCFG_PRD/on/demandware.static/-/Sites-master-catalog-pgatss/default/dw4434623a/Golf-Clubs/Wedges-Putters/Mens-Putters/TaylorMade/2000000025357/TM22PTR_TA406_Spider_GT_Red_No3_SOL_v2.png?sw=767&sh=767&sm=fit"
+        />
+        <em>$250.00</em>
+      </div>
     </div>
-    <div class="carousel-item container-fluid">
-      <h2>M Craft OMOI</h2>
-      <img
-        src="https://www.pgatoursuperstore.com/dw/image/v2/BCFG_PRD/on/demandware.static/-/Sites-master-catalog-pgatss/default/dw5f4abe4f/Golf-Clubs/Wedges-Putters/Mens-Putters/Mizuno/2000000024921/OMOI_Blue_02_1.jpg?sw=1200&sh=1200&sm=fit"
-      />
-      <em>$349.00</em>
-    </div>
-    <div class="carousel-item container-fluid">
-      <h2>Sigma Fetch 2</h2>
-      <img
-        src="https://www.pgatoursuperstore.com/dw/image/v2/BCFG_PRD/on/demandware.static/-/Sites-master-catalog-pgatss/default/dw216b2ce1/Golf-Clubs/Wedges-Putters/Mens-Putters/Ping/2000000001376/2000000001376_1.png?sw=767&sh=767&sm=fit"
-      />
-      <em>$169.00</em>
-    </div>
-    <div class="carousel-item container-fluid">
-      <h2>Spider GT Red #3</h2>
-      <img
-        src="https://www.pgatoursuperstore.com/dw/image/v2/BCFG_PRD/on/demandware.static/-/Sites-master-catalog-pgatss/default/dw4434623a/Golf-Clubs/Wedges-Putters/Mens-Putters/TaylorMade/2000000025357/TM22PTR_TA406_Spider_GT_Red_No3_SOL_v2.png?sw=767&sh=767&sm=fit"
-      />
-      <em>$250.00</em>
-    </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#testimonial-carousel"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#testimonial-carousel"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
-  <button
-    class="carousel-control-prev"
-    type="button"
-    data-bs-target="#testimonial-carousel"
-    data-bs-slide="prev"
-  >
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button
-    class="carousel-control-next"
-    type="button"
-    data-bs-target="#testimonial-carousel"
-    data-bs-slide="next"
-  >
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
 </div>
 {% endblock %}
