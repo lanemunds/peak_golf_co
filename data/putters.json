@@ -63,6 +63,51 @@
         "putter_path":"https://dks.scene7.com/is/image/GolfGalaxy/21CWYM2BLL10SXXXXPTR?qlt=70&wid=1100&fmt=webp",
         "company": "Odyssey",
         "info":"Double bend face-balanced mallet putter, Ideal for golfers with strokes with moderate face rotation and arc, Super high MOI head design, Microhinge Star Insert promotes immediate forward roll for improved speed and control, Multi-material Stroke Lab shaft is lighter, stiffer and more stable to improve tempo and consistency,  Grip: Odyssey Ten Oversize Grip"
+    },
+    {
+        "name": "Eleven Tour Lined Slant Neck Putter",
+        "price": 299.00,
+        "putter_path":"https://dks.scene7.com/is/image/GolfGalaxy/21CWYMLVNTRLNDSPSPTR?qlt=70&wid=780&fmt=webp",
+        "company": "Odyssey",
+        "info":"Double bend face-balanced mallet putter, Ideal for golfers with strokes with moderate face rotation and arc, Super high MOI head design, Microhinge Star Insert promotes immediate forward roll for improved speed and control, Multi-material Stroke Lab shaft is lighter, stiffer and more stable to improve tempo and consistency,  Grip: Odyssey Ten Oversize Grip"
+    },
+    {
+        "name": "HB Soft Milled 8P Putter",
+        "price": 199.00,
+        "putter_path":"https://dks.scene7.com/is/image/GolfGalaxy/22CLEMHBSFTMLLD8PPTR?qlt=70&wid=780&fmt=webp",
+        "company": "Cleveland",
+        "info":"Double bend face-balanced mallet putter, Ideal for golfers with strokes with moderate face rotation and arc, Super high MOI head design, Microhinge Star Insert promotes immediate forward roll for improved speed and control, Multi-material Stroke Lab shaft is lighter, stiffer and more stable to improve tempo and consistency,  Grip: Odyssey Ten Oversize Grip"
+    },
+    
+    {
+        "name": "Anser Putter",
+        "price": 279.00,
+        "putter_path":"https://dks.scene7.com/is/image/GolfGalaxy/22PNGMPNG2023NSRGPTR?qlt=70&wid=780&fmt=webp",
+        "company": "Ping",
+        "info":"Double bend face-balanced mallet putter, Ideal for golfers with strokes with moderate face rotation and arc, Super high MOI head design, Microhinge Star Insert promotes immediate forward roll for improved speed and control, Multi-material Stroke Lab shaft is lighter, stiffer and more stable to improve tempo and consistency,  Grip: Odyssey Ten Oversize Grip"
+    },
+    
+    {
+        "name": "2022 Women's Spider GT Putter",
+        "price": 249.00,
+        "putter_path":"https://dks.scene7.com/is/image/GolfGalaxy/21TYMWTM22PTTRWMNPTR?qlt=70&wid=780&fmt=webp",
+        "company": "TaylorMade",
+        "info":"Double bend face-balanced mallet putter, Ideal for golfers with strokes with moderate face rotation and arc, Super high MOI head design, Microhinge Star Insert promotes immediate forward roll for improved speed and control, Multi-material Stroke Lab shaft is lighter, stiffer and more stable to improve tempo and consistency,  Grip: Odyssey Ten Oversize Grip"
+    },
+    
+    {
+        "name": "anser 2d Putter",
+        "price": 279.00,
+        "putter_path":"https://dks.scene7.com/is/image/GolfGalaxy/22PNGMPNG2023NSR2PTR?qlt=70&wid=780&fmt=webp",
+        "company": "Ping",
+        "info":"Double bend face-balanced mallet putter, Ideal for golfers with strokes with moderate face rotation and arc, Super high MOI head design, Microhinge Star Insert promotes immediate forward roll for improved speed and control, Multi-material Stroke Lab shaft is lighter, stiffer and more stable to improve tempo and consistency,  Grip: Odyssey Ten Oversize Grip"
+    },
+    {
+        "name": "Cleveland HB Soft Milled 11 Single Putter",
+        "price": 199.00,
+        "putter_path":"https://dks.scene7.com/is/image/GolfGalaxy/22CLEMHBSFTMLLD11PTR?qlt=70&wid=780&fmt=webp",
+        "company": "Cleveland",
+        "info":"Double bend face-balanced mallet putter, Ideal for golfers with strokes with moderate face rotation and arc, Super high MOI head design, Microhinge Star Insert promotes immediate forward roll for improved speed and control, Multi-material Stroke Lab shaft is lighter, stiffer and more stable to improve tempo and consistency,  Grip: Odyssey Ten Oversize Grip"
     }
     
 ]
