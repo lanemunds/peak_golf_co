@@ -11,7 +11,7 @@ app.jinja_env.undefined = StrictUndefined
 
 @app.route('/')
 def homepage():
-    putter = crud.get_putter_by_id(randint(1, 6))
+    putter = crud.get_putter_by_id(randint(1, 15))
     return render_template("index.html", putter=putter)
 
 
@@ -139,7 +139,7 @@ def create_rating(putter_id):
     rating_score = request.form.get("rating")
 
     if logged_in_email is None:
-        flash("You must log in to rate a movie.")
+        flash("You must log in to rate a putter.")
     elif not rating_score:
         flash("Error: you didn't select a score for your rating.")
     else:
