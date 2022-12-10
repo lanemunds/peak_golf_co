@@ -3,6 +3,8 @@ from jinja2 import StrictUndefined
 from random import randint
 import crud
 from model import connect_to_db, db
+from http.server import BaseHTTPRequestHandler
+
 
 app = Flask(__name__)
 app.secret_key = 'dev'
